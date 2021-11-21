@@ -1,0 +1,71 @@
+.success_error{
+    font-size: 2rem;
+    margin: 1rem auto;
+    max-width: 60rem;
+    text-align: center;
+    color: green;
+
+}
+.addService-form .form_container {
+    margin: 5rem auto;
+    max-width: 60rem;
+    border-radius: .5rem;
+    border: 0.2rem solid var(--main-bg-color);
+    padding: 2rem;
+    text-align: center;
+    margin-bottom:7rem;
+}
+
+.addService-form form h3 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--main-bg-color);
+    margin-bottom: .7rem;
+}
+
+.addService-form form .inputBox {
+    margin: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: .5rem;
+    border: 1px solid var(--blue);
+    background: #fff;
+    padding: .5rem 1rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.addService-form form .inputBox input,
+.addService-form form .inputBox textarea {
+    width: 100%;
+    padding: 1rem;
+    background: none;
+    font-size: 1.5rem;
+    color: var(--black);
+    text-transform: none;
+    font-size: 1.8rem;
+}
+
+.addService-form  label {
+    font-size: 2rem;
+    text-align: left;
+    display: block;
+}
+
+.addService-form form input[type="submit"]{
+    background: #fff;
+    color: var(--blue);
+}
+
+.addService-form form input[type="submit"]:hover{
+    background: var(--blue);
+    color: #fff;
+}
+
+.addService-form .form_container .btn{
+    width: 100%;
+}

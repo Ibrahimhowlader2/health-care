@@ -1,0 +1,44 @@
+.doctor .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.doctor h1.details_heading {
+    margin: 5rem;
+}
+
+.doctor .row .image {
+    flex: 1 1 45rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.doctor .row .image img {
+    width: 50%;
+    
+}
+
+.doctor .row .content {
+    flex: 1 1 45rem;
+}
+
+.doctor .row .content h3 {
+    color: var(--blue);
+    font-size: 2.5rem;
+    line-height: 1.8;
+    border-bottom: 1px solid var(--blue);
+}
+.doctor .row .content h2 {
+    font-size: 4rem;
+    line-height: 1.8;
+}
+
+.doctor .row .content p {
+    color: var(--light-color);
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}

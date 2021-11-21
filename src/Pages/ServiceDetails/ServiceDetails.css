@@ -1,0 +1,35 @@
+.service .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+}
+
+.service h1.details_heading {
+        margin: 5rem;
+}
+
+.service .row .image {
+        flex: 1 1 45rem;
+}
+
+.service .row .image img {
+        width: 80%;
+}
+
+.service .row .content {
+        flex: 1 1 45rem;
+}
+
+.service .row .content h3 {
+        color: var(--blue);
+        font-size: 2.5rem;
+        line-height: 1.8;
+}
+
+.service .row .content p {
+        color: var(--light-color);
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        line-height: 1.8;
+}

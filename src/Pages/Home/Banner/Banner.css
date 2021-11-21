@@ -1,0 +1,46 @@
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    min-height: 92vh;
+    align-items: center;
+    background:url(../../../images/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .banner .content{
+    flex:1 1 40rem;
+    padding-top: 6.5rem;
+  }
+  .banner .image{
+    flex:1 1 40rem;
+  }
+  .banner .image img{
+    width:100%;
+    padding:1rem;
+    /* animation:float 3s linear infinite; */
+  }
+  
+  @keyframes float{
+    0%, 100%{
+      transform: translateY(0rem);
+    }
+    50%{
+      transform: translateY(3rem);
+    }
+  }
+  
+  .banner .content h3{
+    font-size: 5rem;
+    color:#333;
+  }
+  .banner .content h4{
+    font-size: 4rem;
+    color:#333;
+  }
+  
+  .banner .content p{
+    font-size: 1.7rem;
+    color:#666;
+    padding:1rem 0;
+  }

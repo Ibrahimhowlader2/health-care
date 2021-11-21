@@ -1,0 +1,56 @@
+.doctors .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap:2rem;
+}
+
+.doctors .box-container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+.doctors .box-container .box:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0;
+}
+
+.doctors .box-container .box img{
+    height: 25rem;
+    border:var(--border);
+    border-radius: .5rem;
+    margin: 1rem 0;
+}
+
+.doctors .box-container .box h3{
+    color:var(--black);
+    font-size: 2.5rem;
+}
+
+.doctors .box-container .box span{
+    color:var(--blue);
+    font-size: 1.5rem;
+}
+
+.doctors .box-container .box .share{
+    padding-top: 2rem;
+}
+
+.doctors .box-container .box .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    color:var(--blue);
+    border-radius: .5rem;
+    border:var(--border);
+    margin:.3rem;
+}
+
+.doctors .box-container .box .share a:hover{
+    background:var(--blue);
+    color:#fff;
+    box-shadow: var(--box-shadow);
+}
