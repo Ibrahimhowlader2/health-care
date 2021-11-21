@@ -10,8 +10,8 @@ import Navbar from './Pages/Shared/Navbar/Navbar';
 import Footer from './Pages/Shared/Footer/Footer';
 import DoctorDetails from './Pages/DoctorDetails/DoctorDetails';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
-import AddService from './Pages/Home/Dashboard/AddService/AddService';
-import AddDoctor from './Pages/Home/Dashboard/AddDoctor/AddDoctor';
+import AddService from './Pages/Dashboard/AddService/AddService';
+import AddDoctor from './Pages/Dashboard/AddDoctor/AddDoctor';
 
 
 function App() {
