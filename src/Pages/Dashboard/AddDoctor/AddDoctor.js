@@ -11,6 +11,7 @@ const AddDoctor = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
+        e.target.reset();
         // setIsPending(true);
         if (!doctorImage) {
             return;
@@ -76,7 +77,7 @@ const AddDoctor = () => {
                             />
                         </div>
                         
-                      <input type="submit" value="Add Doctor" className="btn" />
+                      <input type="submit" value="Add Doctor" className="tb_btn" />
                     </form>
                     {success_message &&
                         <p className="success_error">Doctor Added Successfully</p>}

@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Login from '../../Login/Login/Login';
 import './Navbar.css';
 import { links } from '../Data/Data';
-// import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
-    const [isLoginOpen, setIsLoginOpen] = useState(false);
+    // const [isLoginOpen, setIsLoginOpen] = useState(false);
+
+    const { user, logOut } = useAuth();
+
+
     return (
+
         <>
             {/* header section starts  */}
             <header class="header" >
@@ -29,7 +33,7 @@ const Navbar = () => {
                                 return (
                                     <li key={id}>
                                         <Link to={url}>{text}</Link>
-                                        
+
                                     </li>
                                 );
                             })
@@ -92,12 +96,26 @@ const Navbar = () => {
                     {/*===============================
                     Login Icon 
                     ===============================*/}
-                    {isLoginOpen ?
+                    {user.email ?
+
+                        // <span className="user-name">{user.displayName} : </span>
+                    
+                            <button onClick={logOut} className="tb_btn logOut_btn"> Log Out </button>
+                        :
+
+                        <Link to="/login2">
+                            <div class="fas fa-user"></div>
+                        </Link>
+
+                    }
+
+
+                    {/*  {isLoginOpen ?
 
                         <div onClick={() => setIsLoginOpen(!isLoginOpen)} id="login-btn" class="fas fa-times"></div>
                         :
                         <div onClick={() => setIsLoginOpen(!isLoginOpen)} id="login-btn" class="fas fa-user"></div>
-                    }
+                    } */}
                 </div>
 
             </header>
@@ -113,10 +131,10 @@ const Navbar = () => {
 
             </section>
 
-            <Login
+            {/*  <Login
                 isLoginOpen={isLoginOpen}
             >
-            </Login>
+            </Login> */}
         </>
     );
 };

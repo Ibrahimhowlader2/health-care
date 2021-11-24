@@ -60,7 +60,7 @@ const Footer = () => {
                         <h3>newsletter</h3>
                         <form >
                             <input type="email" placeholder="your email" className="email" />
-                            <input type="submit" value="subscribe" class="btn" />
+                            <input type="submit" value="subscribe" class="tb_btn" />
                         </form>
                         <img src={payment} className="payment-img" alt="" />
                     </div>

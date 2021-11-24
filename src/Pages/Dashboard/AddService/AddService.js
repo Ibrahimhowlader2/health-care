@@ -100,8 +100,8 @@ const AddService = () => {
                                 onChange={e => setNumber(e.target.value)}
                             />
                         </div>
-                        {!isPending && <input type="submit" value="Add Service" className="btn" />}
-                        {isPending && <input type="submit" disabled value="Add Service....." className="btn" />}
+                        {!isPending && <input type="submit" value="Add Service" className="tb_btn" />}
+                        {isPending && <input type="submit" disabled value="Add Service....." className="tb_btn" />}
                     </form>
                     {success_message &&
                         <p className="success_error">Service Added Successfully</p>}

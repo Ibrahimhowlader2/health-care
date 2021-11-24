@@ -10,10 +10,11 @@
     margin: 5rem auto;
     max-width: 60rem;
     border-radius: .5rem;
-    border: 0.2rem solid var(--main-bg-color);
+    /* border: 0.2rem solid var(--main-bg-color); */
     padding: 2rem;
     text-align: center;
     margin-bottom:7rem;
+    background: #f5f8fa;
 }
 
 .addService-form form h3 {
@@ -66,6 +67,6 @@
     color: #fff;
 }
 
-.addService-form .form_container .btn{
+.addService-form .form_container .tb_btn{
     width: 100%;
 }

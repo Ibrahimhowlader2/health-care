@@ -81,7 +81,7 @@
     border: 1px solid var(--blue);
 }
 
-.footer form .btn:hover {
+.footer form .tb_btn:hover {
     background: var(--blue);
     color: #fff;
 }

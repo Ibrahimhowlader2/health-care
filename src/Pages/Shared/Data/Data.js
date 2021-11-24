@@ -2,7 +2,7 @@
 export const links = [
     {
         id: 1,
-        url: '/',
+        url: '/home',
         text: 'Home',
         icon: <i className="fas fa-arrow-right"></i>,
     },
@@ -26,8 +26,8 @@ export const links = [
     },
     {
         id: 5,
-        url: '/profile',
-        text: 'Profile',
+        url: '/dashboard',
+        text: 'Dashboard',
         icon: <i className="fas fa-arrow-right"></i>,
     },
 ];

@@ -1,4 +1,4 @@
-.login-form-container {
+/* .login_form {
     position: fixed;
     top: 8.5rem;
     left: 0;
@@ -11,11 +11,11 @@
     
   }
   
-  .login-form-container.active {
+  .login_form.active {
     display: block;
   }
   
-  .login-form-container form {
+  .login_form .login_Container {
     margin: 2rem auto;
     max-width: 40rem;
     -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
@@ -26,15 +26,17 @@
     -webkit-animation: fadeUp .4s linear;
             animation: fadeUp .4s linear;
   }
-  
-  .login-form-container form h3 {
+  .login_form .login_Container .google-sign-in{
+    text-align: center;
+  }
+  .login_form .login_Container form h3 {
     padding-bottom: 1rem;
     font-size: 2.5rem;
     text-transform: uppercase;
     color: #130f40;
   }
   
-  .login-form-container form .box {
+  .login_form .login_Container form .box {
     margin: .7rem 0;
     border-radius: .5rem;
     background: #f7f7f7;
@@ -45,7 +47,7 @@
     width: 100%;
   }
   
-  .login-form-container form .remember {
+  .login_form .login_Container form .remember {
     padding: 1rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -56,33 +58,34 @@
     gap: .5rem;
   }
   
-  .login-form-container form .remember label {
+  .login_form .login_Container form .remember label {
     font-size: 1.5rem;
     cursor: pointer;
     color: #666;
   }
   
-  .login-form-container form .btn {
+  .login_form .login_Container form .btn,
+  .login_form .login_Container .google-sign-in .btn {
     margin: 1rem 0;
     width: 100%;
     text-align: center;
   }
-  .login-form-container form .btn:hover {
+  .login_form .login_Container form .btn:hover {
     background:var(--blue);
     color: #fff;
   }
   
-  .login-form-container form p {
+  .login_form .login_Container form p {
     padding-top: 1rem;
     font-size: 1.5rem;
     color: #666;
   }
   
-  .login-form-container form p a {
+  .login_form .login_Container form p a {
     color: var(--blue);
   }
   
-  .login-form-container form p a:hover {
+  .login_form .login_Container form p a:hover {
     color: #130f40;
     text-decoration: underline;
-  }
+  } */

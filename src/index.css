@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root {
+  --main-bg-color: var(--blue);
+  --main-text-color: var(--blue-light);
+  --second-text-color: #bbbec5;
+  --second-bg-color: #c6c1ef;
+  
   /* --blue:#ff3838; */
   --blue: #2251ff;
+  --blue-light: #5276fc;
   --black: #130f40;
   --light-color: #666;
   --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
@@ -51,7 +57,10 @@ body {
 }
 
 section {
-  padding: 5.5rem 9%;
+  padding: 3rem 9%;
+}
+a{
+  text-decoration: none;
 }
 .details_heading{
   font-family: 'Poppins', sans-serif;
@@ -102,7 +111,7 @@ section {
   margin-right: 0;
   margin-left: 1rem;
 }
-.btn {
+.tb_btn {
   display: inline-block;
   padding: .8rem 3rem;
   border: .2rem solid var(--blue);
@@ -116,7 +125,7 @@ section {
   margin-top: 1rem;
 }
 
-.btn::before {
+.tb_btn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -128,11 +137,11 @@ section {
   z-index: -1;
 }
 
-.btn:hover::before {
+.tb_btn:hover::before {
   width: 100%;
   left: 0;
 }
 
-.btn:hover {
+.tb_btn:hover {
   color: #fff;
 }
